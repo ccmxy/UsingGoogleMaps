@@ -1,5 +1,8 @@
 <li class="list-group-item" {{action 'detailsShow'}}>
-  {{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}} {{format-date listing.date_added}}
+  {{#link-to 'listing' listing.id}}
+    {{listing.title}}
+  {{/link-to}}
+  {{format-date listing.date_added}}
   {{#if areDetailsShowing }}
     {{listing.details}}
       {{#if listing.hasImage}}
@@ -9,4 +12,8 @@
        <button {{action 'detailsShow'}}>Preview</button>
   {{/if}}
   <button {{action 'delete' listing}}>Delete</button>
+  {{#if listing.hasImage}}
+    pic included!
+  {{/if}}
+
 </li>
