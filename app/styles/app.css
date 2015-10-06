@@ -35,7 +35,9 @@ body {
   color: #080
 }
 
-
+.muted{
+  opacity: 0.5;
+}
 /*.sidebar{
 	width: 20%;
 	float: left;
