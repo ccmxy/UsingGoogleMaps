@@ -16,13 +16,15 @@ export default Ember.Component.extend({
         latitude: this.get('latitude') ? this.get('latitude') : "",
         longitude: this.get('longitude') ? this.get('longitude') : "",
         date_added: Date.now(),
-        hasMap: true
+        hasMap: true,
+        hasImage: true
       };
       if(params.latitude == "" || params.longitude == ""){
         params.hasMap = false;
       }
-
-
+      if(params.image == ""){
+        params.hasImage = false;
+      }
       this.set('addNewListing', false),
       this.sendAction('save', params);
     }

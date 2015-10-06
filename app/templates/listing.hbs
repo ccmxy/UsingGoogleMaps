@@ -6,8 +6,13 @@
 
   <p>Date added: {{format-date model.date_added}}</p>
 
+  {{#if model.hasImage}}
 
   <p><img class="listing-image" src="{{model.image}}"></p>
+  {{else}}
+  <p>What</p>
+  {{/if}}
+
   {{#link-to 'category' model.category.id}}Back to {{model.category.name}}{{/link-to}}
 </div>
 

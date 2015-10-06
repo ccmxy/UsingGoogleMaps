@@ -8,5 +8,6 @@ export default DS.Model.extend({
   date_added: DS.attr(),
   latitude: DS.attr('number'),
   longitude: DS.attr('number'),
-  hasMap: DS.attr('boolean')
+  hasMap: DS.attr('boolean'),
+  hasImage: DS.attr('boolean')
 });
