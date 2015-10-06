@@ -1,0 +1,8 @@
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">List</button>
+  <button type="button" class="btn btn-default" {{action 'thumbnailFormShow' category}}>Thumbnails</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+{{#if showThumbnail}}
+  <p> {{category.name}}</p>
+{{/if}}
