@@ -13,7 +13,11 @@
   {{/if}}
   <button {{action 'delete' listing}}>Delete</button>
   {{#if listing.hasImage}}
-    pic included!
+    <span class="pic"> pic </span>
   {{/if}}
+  {{#if listing.hasImage}}
+    <span class="map"> map </span>
+  {{/if}}
+
 
 </li>

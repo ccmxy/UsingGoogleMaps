@@ -21,8 +21,18 @@ body {
   }
 
 .listing-image{
-  max-width: 600px; 
+  max-width: 600px;
   height: auto;
+}
+
+.pic{
+  /*color: #FFA500;*/
+  color: orange;
+  /*font-size: smaller;*/
+}
+
+.map{
+  color: #080
 }
 
 
