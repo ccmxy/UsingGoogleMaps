@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   model(params) {
     window.parent.$("ul#nav navbar-nav").append("<li>" + "pizza.toppings[i]" + "</li>");
     var theListing = this.store.findRecord('listing', params.listing_id);
-    window.parent.$(".goesHere").text("test");
+    //window.parent.$(".goesHere").text("test");
 
     return this.store.findRecord('listing', params.listing_id);
   }

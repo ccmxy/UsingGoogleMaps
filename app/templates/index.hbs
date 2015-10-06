@@ -1,7 +1,7 @@
 <div class="sidebar">
 <ul>
   {{#each model as |category|}}
-  {{#link-to 'category' category.id}}
+  {{#link-to 'category' category.id }}
       {{categories-component category=category destroyCategory="destroyCategory"}}
     {{/link-to}}
   {{/each}}
