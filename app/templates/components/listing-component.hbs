@@ -1,5 +1,5 @@
 <li class="list-group-item" {{action 'detailsShow'}}>
-  {{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}}
+  {{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}} {{format-date listing.date_added}}
   {{#if areDetailsShowing }}
   {{listing.details}}
   <p><img src={{listing.image}} {{action 'detailsHide'}}></p>
