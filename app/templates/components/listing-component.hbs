@@ -1,0 +1,12 @@
+<li class="list-group-item" {{action 'detailsShow'}}>
+  {{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}}
+  {{#if areDetailsShowing }}
+  {{listing.details}}
+  <p><img src={{listing.image}} {{action 'detailsHide'}}></p>
+  {{else}}
+       <button {{action 'detailsShow'}}>Preview</button>
+  {{/if}}
+
+
+  <button {{action 'delete' listing}}>Delete</button>
+</li>

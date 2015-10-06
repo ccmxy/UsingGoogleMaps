@@ -1,0 +1,26 @@
+
+/* navbar */
+.navbar-fixed-top {
+    background-color: #EAEAEA;
+    border-color: #4A094D;
+    margin-bottom: 20px;
+}
+
+body {
+  margin-left: 50px;
+  padding-top: 100px;
+  background-color: #EAEAEA
+}
+
+.listing{
+  text-align: center;
+}
+/*.sidebar{
+	width: 20%;
+	float: left;
+	background-color: #EAEAEA;
+	padding: 10px;
+	margin-bottom: -10px;
+	padding-bottom: 49px;
+  padding-top: 20px;
+}*/
