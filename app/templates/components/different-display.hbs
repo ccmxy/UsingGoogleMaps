@@ -1,15 +1,24 @@
 <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default">List</button>
+  <button type="button" class="btn btn-default"{{action 'listFormShow' category}}>List</button>
   <button type="button" class="btn btn-default" {{action 'thumbnailFormShow' category}}>Thumbnails</button>
   <button type="button" class="btn btn-default">Right</button>
 </div>
-{{#if showThumbnail}}
-<ul>
+
+{{#if showList}}
+<ul class="list-group">
   {{#each category.listings as |listing|}}
-    {{#if listing.hasImage}}
-      <p> {{listing.title}}</p>
-      <p><img class="thumnail-image" src="{{listing.image}}"></p>
-    {{/if}}
+ {{listing-component listing=listing destroyListing="destroyListing"}}
   {{/each}}
 </ul>
+{{/if}}
+
+{{#if showThumbnail}}
+  <ul>
+    {{#each category.listings as |listing|}}
+      {{#if listing.hasImage}}
+        <p> {{listing.title}}</p>
+        <p><img class="thumnail-image" src="{{listing.image}}"></p>
+      {{/if}}
+    {{/each}}
+  </ul>
 {{/if}}
