@@ -38,6 +38,17 @@ body {
 .muted{
   opacity: 0.5;
 }
+
+.header-logo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    float: left;
+    line-height: 1;
+    margin: .2125em .4em;
+    padding: 0.25em;
+    text-decoration: none;
+}
 /*.sidebar{
 	width: 20%;
 	float: left;
