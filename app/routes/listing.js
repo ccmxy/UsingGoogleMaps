@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   listing(params) {
     return this.store.findRecord('listing', params.listing_id);
   },
-  itHasImage: true,
   actions: {
   }
 });

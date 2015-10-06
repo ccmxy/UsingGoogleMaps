@@ -7,5 +7,6 @@ export default DS.Model.extend({
   category: DS.belongsTo('category', {async: true}),
   date_added: DS.attr(),
   latitude: DS.attr('number'),
-  longitude: DS.attr('number')
+  longitude: DS.attr('number'),
+  hasMap: DS.attr('boolean')
 });
