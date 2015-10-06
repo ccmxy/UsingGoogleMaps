@@ -25,6 +25,12 @@ body {
   height: auto;
 }
 
+.thumnail-image{
+  max-width: 100px;
+  height: auto;
+}
+
+
 .pic{
   /*color: #FFA500;*/
   color: orange;

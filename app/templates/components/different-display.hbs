@@ -4,5 +4,12 @@
   <button type="button" class="btn btn-default">Right</button>
 </div>
 {{#if showThumbnail}}
-  <p> {{category.name}}</p>
+<ul>
+  {{#each category.listings as |listing|}}
+    {{#if listing.hasImage}}
+      <p> {{listing.title}}</p>
+      <p><img class="thumnail-image" src="{{listing.image}}"></p>
+    {{/if}}
+  {{/each}}
+</ul>
 {{/if}}
